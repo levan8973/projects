@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Название страницы" />
+    <meta property="og:description" content="Описание страницы" />
+    <meta property="og:image" content="http://site.com/uploads/image_1.png" />
+    <meta property="og:url" content="http://site.com/page_1.html" />
+    <meta property="og:site_name" content="Название сайта" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__menu">
+        <div class="header__menu-indent">
+          <a class="header__logo" href=""><img src="icon/logo.svg" alt="" /></a>
+          <button class="header__menu-phone">
+            <img src="icon/phone.svg" alt="" />
+            <a class="header__phone-link" href="" tel="+71234567890"
+              >7 123 456 78 90</a
+            >
+          </button>
+          <input class="header__serch-box" type="text" placeholder="поиск" />
+          <select class="header__menu-city" name="" id="">
+            <option value="">Выбор города</option>
+          </select>
+          <button class="header__menu-calc open-popup">
+            <img src="icon/calc.svg" alt="" />
+            <span>Калькулятор</span>
+          </button>
+          <button class="header__menu-entrance">
+            <img src="icon/man.svg" alt="" />
+            <span>Вход</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="pop-up">
+        <div class="pop-up__text">
+          <button class="pop-up__close">
+            <img src="icon/close.svg" alt="" />
+          </button>
+          <h2 class="pop-up__heading">Рассчитаите стоимость</h2>
+          <div class="pop-up__elements">
+            <span class="pop-up__text-item">Вы можете</span>
+            <a href="" class="pop-up__link">Зарегестрироваться</a>
+          </div>
+        </div>
+        <div class="pop-up__inputs">
+          <div class="pop-up__inputs-block">
+            <input class="pop-up__input" type="text" placeholder="Имя" />
+            <input class="pop-up__input" type="text" placeholder="Телефон" />
+            <input class="pop-up__input" type="text" placeholder="Почта" />
+          </div>
+          <div class="pop-up__inputs-block">
+            <input class="pop-up__input" type="text" placeholder="Откуда" />
+            <input class="pop-up__input" type="text" placeholder="Куда" />
+            <input
+              class="pop-up__input"
+              type="text"
+              placeholder="Комментарий к заказу"
+            />
+          </div>
+        </div>
+        <div class="pop-up__btn">
+          <button class="btn__order">Заказать</button>
+          <button class="btn__calck">Расчитать перевозку</button>
+        </div>
+      </div>
+
+      <div class="header__nav">
+        <ul class="header__nav-elements">
+          <li id="dropDown" class="menu-item">
+            <a class="menu-item-link" href="#">Услуги</a>
+            <img src="icon/Vector.svg" alt="" />
+          </li>
+          <div id="drop" class="drop-down">
+            <a href="">Перевозка в другой город</a>
+            <a href="">Внутри города</a>
+            <a href="">Зарубежные перевозки</a>
+          </div>
+          <li class="menu-item">
+            <a class="menu-item-link" href="#">Международные перевозки</a>
+            <img src="icon/Vector.svg" alt="" />
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="#">Для бизнеса</a>
+            <img src="icon/Vector.svg" alt="" />
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="#">Частным лицам</a>
+            <img src="icon/Vector.svg" alt="" />
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="#">О компании</a>
+            <img src="icon/Vector.svg" alt="" />
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="#">Блог</a>
+            <img src="icon/Vector.svg" alt="" />
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="#">Контакты</a>
+            <img src="icon/Vector.svg" alt="" />
+          </li>
+          <li class="menu-item">
+            <img src="icon/message.svg" alt="" />
+            <a class="menu-item-link" href="#">deliverytrans@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <section class="header__main">
+        <div class="header__main-elements">
+          <h2 class="header__main-heading">
+            Доставим ваш груз в любую точку России
+          </h2>
+          <p class="header__main-text">
+            Доставляем сборный груз от 1кг по всей стране узнай стоймость
+            перевозки прямо сейчас
+          </p>
+        </div>
+
+        <div class="header__aside">
+          <button class="header__aside-btn">
+            <img src="icon/calculator.svg" alt="" />
+          </button>
+          <span class="header__aside-text">расчитать</span>
+          <span class="header__aside-text">стоимость</span>
+          <button class="header__aside-btn-two">
+            <img src="icon/girl.svg" alt="" />
+          </button>
+          <span class="header__aside-text">личный</span>
+          <span class="header__aside-text">менеджер</span>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="main__header">
+        <section class="section-tab">
+          <div class="tab">
+            <button class="tab__btn tab__btn-active">Тент</button>
+            <button class="tab__btn">Борт</button>
+            <button class="tab__btn">Рефрижератор</button>
+            <button class="tab__btn">Фургон</button>
+          </div>
+          <button class="tab-calc">
+            <img src="icon/calc-tab.svg" alt="" />
+          </button>
+        </section>
+        <div class="main__header-content">
+          <div class="main__header-box main__header-box-active">
+            <div class="main__header-item">
+              <span class="main__item-text">фургон</span>
+              <img class="main__car-one" src="img/car-one.png" alt="" />
+              <div class="main__header-btn">
+                <button class="main__item-btn">
+                  <span class="main__btn-text">Заказать</span>
+                </button>
+                <button class="main__btn-calc">
+                  <img src="icon/calc-btn.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="main__header-item">
+              <span class="main__item-text text-car-two">Грузовик</span>
+              <img
+                class="main__car-one img-car-two"
+                src="img/car-two.png"
+                alt=""
+              />
+              <div class="main__header-btn">
+                <button class="main__item-btn">
+                  <span class="main__btn-text">Заказать</span>
+                </button>
+                <button class="main__btn-calc">
+                  <img src="icon/calc-btn.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="main__header-item">
+              <span class="main__item-text">фургон</span>
+              <img class="main__car-one" src="img/car-three.png" alt="" />
+              <div class="main__header-btn">
+                <button class="main__item-btn">
+                  <span class="main__btn-text">Заказать</span>
+                </button>
+                <button class="main__btn-calc">
+                  <img src="icon/calc-btn.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="main__header-item">
+              <span class="main__item-text text-car-four">Грузовик</span>
+              <img
+                class="main__car-one img-car-four"
+                src="img/car-four.png"
+                alt=""
+              />
+              <div class="main__header-btn">
+                <button class="main__item-btn">
+                  <span class="main__btn-text">Заказать</span>
+                </button>
+                <button class="main__btn-calc">
+                  <img src="icon/calc-btn.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__header-box">
+            <div id="box-one" class="main__header-item">
+              <span class="main__item-text">губон</span>
+              <img class="main__car-one" src="img/car-one.png" alt="" />
+              <div class="main__header-btn">
+                <button class="main__item-btn">
+                  <span class="main__btn-text">Заказать</span>
+                </button>
+                <button class="main__btn-calc">
+                  <img src="icon/calc-btn.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="main__header-item">
+              <span class="main__item-text text-car-two">Грузовик</span>
+              <img
+                class="main__car-one img-car-two"
+                src="img/car-two.png"
+                alt=""
+              />
+              <div class="main__header-btn">
+                <button class="main__item-btn">
+                  <span class="main__btn-text">Заказать</span>
+                </button>
+                <button class="main__btn-calc">
+                  <img src="icon/calc-btn.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="main__header-item">
+              <span class="main__item-text">фургон</span>
+              <img class="main__car-one" src="img/car-three.png" alt="" />
+              <div class="main__header-btn">
+                <button class="main__item-btn">
+                  <span class="main__btn-text">Заказать</span>
+                </button>
+                <button class="main__btn-calc">
+                  <img src="icon/calc-btn.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="main__header-item">
+              <span class="main__item-text text-car-four">Грузовик</span>
+              <img
+                class="main__car-one img-car-four"
+                src="img/car-four.png"
+                alt=""
+              />
+              <div class="main__header-btn">
+                <button class="main__item-btn">
+                  <span class="main__btn-text">Заказать</span>
+                </button>
+                <button class="main__btn-calc">
+                  <img src="icon/calc-btn.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="main__section-two">
+        <h2 class="main__heading-section-two">Виды перевозимых грузов</h2>
+        <div class="main__group-elements">
+          <div class="main__elements">
+            <div class="main__section-elements">
+              <div class="main__section-text">
+                <h3 class="main__section-head">Экспедирование</h3>
+                <p class="main__text-item">
+                  Принимаем, сопровождаем и сдаем груз по утвержденному
+                  маршруту. Контролируем правильное оформление...
+                </p>
+                <button class="main__text-btn">Подробнее</button>
+              </div>
+              <img src="img/car-section-two.png" alt="" />
+            </div>
+
+            <div class="main__section-elements">
+              <div class="main__section-text">
+                <h3 class="main__section-head">Экспедирование</h3>
+                <p class="main__text-item">
+                  Принимаем, сопровождаем и сдаем груз по утвержденному
+                  маршруту. Контролируем правильное оформление...
+                </p>
+                <button class="main__text-btn">Подробнее</button>
+              </div>
+              <img src="img/tabls.png" alt="" />
+            </div>
+
+            <div class="main__section-elements">
+              <div class="main__section-text">
+                <h3 class="main__section-head">Экспедирование</h3>
+                <p class="main__text-item">
+                  Принимаем, сопровождаем и сдаем груз по утвержденному
+                  маршруту. Контролируем правильное оформление...
+                </p>
+                <button class="main__text-btn">Подробнее</button>
+              </div>
+              <img src="img/instruments.png" alt="" />
+            </div>
+          </div>
+
+          <div class="main__elements">
+            <div class="main__section-elements">
+              <div class="main__section-text">
+                <h3 class="main__section-head">Экспедирование</h3>
+                <p class="main__text-item">
+                  Принимаем, сопровождаем и сдаем груз по утвержденному
+                  маршруту. Контролируем правильное оформление...
+                </p>
+                <button class="main__text-btn">Подробнее</button>
+              </div>
+              <img src="img/main-car-two.png" alt="" />
+            </div>
+
+            <div class="main__section-elements">
+              <div class="main__section-text">
+                <h3 class="main__section-head">Экспедирование</h3>
+                <p class="main__text-item">
+                  Принимаем, сопровождаем и сдаем груз по утвержденному
+                  маршруту. Контролируем правильное оформление...
+                </p>
+                <button class="main__text-btn">Подробнее</button>
+              </div>
+              <img src="img/fruits.png" alt="" />
+            </div>
+
+            <div class="main__section-elements">
+              <div class="main__section-text">
+                <h3 class="main__section-head">Экспедирование</h3>
+                <p class="main__text-item">
+                  Принимаем, сопровождаем и сдаем груз по утвержденному
+                  маршруту. Контролируем правильное оформление...
+                </p>
+                <button class="main__text-btn">Подробнее</button>
+              </div>
+              <img src="img/tabls.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__two">
+        <h2 class="two__heading">О компании</h2>
+        <div class="main__two-elements">
+          <div class="two__text-elements">
+            <h3 class="two__heading-text">Lorem ipsum dolor sit amet</h3>
+            <p class="two__text">
+              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate<br />
+              <br />
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditii Sint occaecati cupiditate non provident, similique sunt
+              in culpa qui officia deserunt<br />
+              <br />
+              Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.<br />
+              <br />
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate
+            </p>
+          </div>
+          <img class="two__img" src="img/man.png" alt="" />
+        </div>
+      </section>
+
+      <section class="main__section-three">
+        <h2 class="section-three__heading">Приемущества</h2>
+
+        <div class="section-three-elements">
+          <div class="section-three__cards">
+            <div class="card__top">
+              <div class="card__elements">
+                <div class="card__text-elements">
+                  <span class="card__heading">Экономия времени</span>
+                  <p class="card__text card-one">
+                    Не надо звонить и вести долгие переговоры
+                  </p>
+                </div>
+                <img class="card__img" src="icon/stopwatch.svg" alt="" />
+              </div>
+
+              <div class="card__elements">
+                <div class="card__text-elements">
+                  <span class="card__heading">Гарантия цены</span>
+                  <p class="card__text">
+                    Исполнитель не изменит цену и условия в последний момент
+                  </p>
+                </div>
+                <img class="card__img" src="icon/p.svg" alt="" />
+              </div>
+
+              <div class="card__elements">
+                <div class="card__text-elements">
+                  <h3 class="card__heading">Страхование грузов</h3>
+                  <p class="card__text">
+                    Перевозчики торгуются<br /><br />
+                    за ваш заказ,<br /><br />
+                    снижая цены
+                  </p>
+                </div>
+                <img class="card__img" src="icon/box.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="card__top">
+              <div class="card__elements">
+                <div class="card__text-elements">
+                  <h3 class="card__heading">Отслеживание груза</h3>
+                  <p class="card__text">
+                    Схема отслеживая<br /><br />
+                    покажет<br /><br />
+                    где ваш груз
+                  </p>
+                </div>
+                <img class="card__img" src="icon/map.svg" alt="" />
+              </div>
+
+              <div class="card__elements">
+                <div class="card__text-elements">
+                  <h3 class="card__heading">Оплата картой</h3>
+                  <p class="card__text">
+                    Оплата картой и Яндекс.Деньги,<br /><br />
+                    а так же<br /><br />
+                    большой выбор<br /><br />
+                    других способов оплаты
+                  </p>
+                </div>
+                <img class="card__img" src="icon/insert-card.svg" alt="" />
+              </div>
+
+              <div class="card__elements">
+                <div class="card__text-elements">
+                  <h3 class="card__heading">Надёжные перевозчики</h3>
+                  <p class="card__text">
+                    Все перевозчики проходят<br /><br />
+                    у нас проверку<br /><br />
+                    документов<br /><br />
+                    и подтверждение транспорта
+                  </p>
+                </div>
+                <img class="card__img" src="icon/avatar.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="section-three__numbers">
+            <div class="numbers__elements">
+              <h2 class="numbers__heading">О нас в цифрах</h2>
+              <p class="numbers__text">
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor
+              </p>
+            </div>
+            <div class="numbers__elements-two">
+              <h2 class="numbers__six">#6</h2>
+              <p class="numbers__text two-text">
+                Consectetur adipiscing elit, sed do eiusmod tempor
+              </p>
+            </div>
+          </div>
+
+          <div class="section-three__statistic">
+            <div class="statistic__elements">
+              <div class="statistic__item">
+                <span class="statistic__numbers">3500</span>
+                <span class="statistic__text"
+                  >Профессиональных сотрудников</span
+                >
+              </div>
+              <div class="statistic__item">
+                <span class="statistic__numbers">400</span>
+                <span class="statistic__text">Единиц автотранспорта</span>
+              </div>
+              <div class="statistic__item">
+                <span class="statistic__numbers">31</span>
+                <span class="statistic__text">Филиал по всей России</span>
+              </div>
+            </div>
+
+            <div class="statistic__elements">
+              <div class="statistic__item">
+                <span class="statistic__numbers">10</span>
+                <span class="statistic__text"
+                  >В топе транспортных компаний</span
+                >
+              </div>
+              <div class="statistic__item">
+                <span class="statistic__numbers">7000</span>
+                <span class="statistic__text">Постоянных клиентов</span>
+              </div>
+              <div class="statistic__item">
+                <span class="statistic__numbers">22</span>
+                <span class="statistic__text">Года вместе с вами</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-three__form">
+        <h2 class="form__heading">Нет времени разбираться? Подскажем!</h2>
+        <form class="form__elements" action="" method="post">
+          <div class="form__input">
+            <input class="input" type="text" placeholder="я хочу перевезти" />
+            <input class="input" type="text" placeholder="откуда - куда" />
+            <input class="input" type="text" placeholder="телефон" />
+          </div>
+
+          <div class="form__footer">
+            <label class="label-checkbox" for=""
+              ><input type="checkbox" class="label" />Согласие на обработку
+              персональных данных</label
+            >
+            <button class="form__btn">Оставить заявку</button>
+          </div>
+        </form>
+      </section>
+      <section class="main-footer">
+        <div class="main-footer__item" name="" id="">
+          <span>Рекомендации наших клиентов</span>
+        </div>
+        <p class="main__footer-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
+          quis? Ab voluptas exercitationem similique deleniti reprehenderit
+          laborum architecto, nulla quaerat delectus nemo, quasi, rem asperiores
+          mollitia ad deserunt culpa sapiente.
+        </p>
+        <div class="main-footer__item item-bagraund" name="" id="">
+          <span>Новости и акции</span>
+        </div>
+        <div class="main-footer__item" name="" id="">
+          <span>Наши партнеры</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__content">
+        <div class="footer__elements">
+          <h3 class="elements__heading">О компании</h3>
+          <ul class="footer__list">
+            <li class="list__item">
+              <a class="list-item__link" href="">Филиалы</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Новости</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Блог</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Горячая линия</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__elements">
+          <h3 class="elements__heading">Контакты</h3>
+          <ul class="footer__list">
+            <li class="list__item">
+              <img src="icon/phone__footer1.svg" alt="" />
+              <a class="list-item__link" href="">+7 987 654 32 10</a>
+            </li>
+            <li class="list__item">
+              <img src="icon/mail__footer.svg" alt="" />
+              <a class="list-item__link" href=""> mail@mail.ru</a>
+            </li>
+            <li class="list__item">
+              <img src="icon/whathApp__footer.svg" alt="" />
+              <a class="list-item__link" href="">WhatsApp</a>
+            </li>
+            <li class="list__item">
+              <img src="icon/street__footer.svg" alt="" />
+              <a class="list-item__link" href=""> Москва, ул. Лобачика 11</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__elements">
+          <h3 class="elements__heading">Соц сети</h3>
+          <div>
+            <img src="icon/icon__footer.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__content">
+        <div class="footer__elements">
+          <h3 class="elements__heading">Направления</h3>
+          <ul class="footer__list">
+            <li class="list__item">
+              <a class="list-item__link" href="">Тарифы</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Требования к грузу</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Требования к упаковке</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__elements">
+          <h3 class="elements__heading">Услуги</h3>
+          <ul class="footer__list">
+            <li class="list__item">
+              <a class="list-item__link" href="">Тарифы</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Проверка груза по ттн</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Сотрудничество</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Электронный</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__content">
+        <div class="footer__elements">
+          <h3 class="elements__heading">Международные перевозки</h3>
+          <ul class="footer__list">
+            <li class="list__item">
+              <a class="list-item__link" href="">Грузоперевозки Москва–Омск</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href=""
+                >Грузоперевозки Москва–Красноярск</a
+              >
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href=""
+                >Грузоперевозки Москва-Ростов-на-Дону</a
+              >
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href=""
+                >Грузоперевозки Москва-Челябинск</a
+              >
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href=""
+                >Грузоперевозки Москва–Барнаул</a
+              >
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href=""
+                >Грузоперевозки Москва–Самара</a
+              >
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href=""
+                >Грузоперевозки Москва–Самара</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__elements">
+          <h3 class="elements__heading">Условия перевозок</h3>
+          <ul class="footer__list">
+            <li class="list__item">
+              <a class="list-item__link" href="">Грузоперевозки Москва–Омск</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">
+                Грузоперевозки Москва–Красноярск</a
+              >
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href=""
+                >Грузоперевозки Москва-Ростов-на-Дону</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__content">
+        <div class="footer__elements">
+          <h3 class="elements__heading">Для бизнеса</h3>
+          <ul class="footer__list">
+            <li class="list__item">
+              <a class="list-item__link" href="">Филиалы</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Новости</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Блог</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Горячая линия</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Вакансии</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__elements">
+          <h3 class="elements__heading">Частным лицам</h3>
+          <ul class="footer__list">
+            <li class="list__item">
+              <a class="list-item__link" href="">Филиалы</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Новости</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Блог</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__elements">
+          <h3 class="elements__heading">Водителям</h3>
+          <ul class="footer__list">
+            <li class="list__item">
+              <a class="list-item__link" href="">Филиалы</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Новости</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Блог</a>
+            </li>
+            <li class="list__item">
+              <a class="list-item__link" href="">Блог</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
