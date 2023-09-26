@@ -738,6 +738,10 @@
   flex-direction: column;
 }
 .main-footer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 60px 0 71px;
   color: #000;
   text-align: center;
@@ -749,6 +753,7 @@
   background: #f3f9ff;
   border: none;
 }
+
 .main__footer-content {
   display: none;
   color: #000;
@@ -759,7 +764,7 @@
   font-weight: 500;
   line-height: normal;
 }
-.main__footer-content-active{
+.content-active .main__footer-content {
   display: flex;
 }
 .item-bagraund {

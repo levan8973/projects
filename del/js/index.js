@@ -36,12 +36,16 @@ btns.forEach((tab) =>
 );
 
 //accordeon
-const btnAccordeon = document.querySelectorAll(".main-footer__item");
-
-const accordeon = document.querySelector(".main__footer-content");
-
-btnAccordeon.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    btn.classList.toggle("is-open");
+document.querySelectorAll(".main-footer-btn").forEach((item) => {
+  item.addEventListener("click", () => {
+    const parent = item.parentNode;
+    if (parent.classList.contains("content-active")) {
+      parent.classList.remove("content-active");
+    } else {
+      document.querySelectorAll(".main-footer__item").forEach((child) => {
+        child.classList.remove("content-active");
+        parent.classList.add("content-active");
+      });
+    }
   });
 });
